@@ -35,7 +35,6 @@ function App() {
   };
 
   const handleSaveToDB = async () => {
-    // Example: Save achievements and table data to database
     console.log("Saving achievements to DB:", achievements);
     console.log("Saving table data to DB:", tableData);
   };

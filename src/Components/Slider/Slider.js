@@ -33,7 +33,7 @@ const Slider = ({ cards, onCardClick, onCardRemove }) => {
 
   const handleCardClick = (type, title, index) => {
     onCardClick(type, title);
-    onCardRemove(index); // Remove the card from the slider
+    onCardRemove(index); 
   };
 
   return (

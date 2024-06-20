@@ -8,9 +8,9 @@ const Table = ({ tableData }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
-    }, 60000); // Update every minute
+    }, 60000); 
 
-    return () => clearInterval(timer); // Clean up the timer on component unmount
+    return () => clearInterval(timer); 
   }, []);
 
   return (

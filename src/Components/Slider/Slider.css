@@ -1,5 +1,5 @@
 .slider {
-    position: relative; /* Сделаем родительский элемент для абсолютно позиционированных стрелок */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
     overflow: hidden;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative; /* Необходимо для правильного позиционирования стрелок */
+    position: relative; 
   }
   
   .card {
@@ -23,8 +23,8 @@
     margin: 20px;
     width: 20%;
     cursor: pointer;
-    position: relative; /* Необходимо для правильного позиционирования стрелок */
-    z-index: 1; /* Задаем z-index, чтобы карточки находились выше стрелок */
+    position: relative; 
+    z-index: 1; 
   }
   
   @media (max-width: 768px) {
@@ -69,7 +69,7 @@
     cursor: pointer;
     padding: 10px;
     font-size: 16px;
-    z-index: 2; /* Задаем z-index, чтобы стрелки находились выше карточек */
+    z-index: 2; 
   }
   
   .slider-button {
