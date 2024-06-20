@@ -1,0 +1,85 @@
+.slider {
+    position: relative; /* Сделаем родительский элемент для абсолютно позиционированных стрелок */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Необходимо для правильного позиционирования стрелок */
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    border: 1px solid #000000;
+    background-color: #00b4d8;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 20%;
+    cursor: pointer;
+    position: relative; /* Необходимо для правильного позиционирования стрелок */
+    z-index: 1; /* Задаем z-index, чтобы карточки находились выше стрелок */
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 80%;
+    }
+  }
+  
+  .slider-card {
+    flex: 0 0 auto;
+    width: 315px;
+  }
+  
+  .card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .active {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 2; /* Задаем z-index, чтобы стрелки находились выше карточек */
+  }
+  
+  .slider-button {
+    font-size: 45px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }

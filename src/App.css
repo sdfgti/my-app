@@ -1,38 +1,39 @@
-.App {
+h1 {
   text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  color: #03045e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #caf0f8; /* Set the desired background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; /* Set a default font family if desired */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dotted-line {
+  border: none;
+  border-top: 2px dotted #948686; /* Change the color and thickness as needed */
+  margin: 20px 0; /* Adjust the spacing as needed */
+}
+.button-section {
+  background-color: #66bbcc; /* Set the desired background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-section button {
+  /* Optionally, you can style the buttons themselves */
+  color: white; /* Text color of buttons */
+  background-color: #0077b6; /* Background color of buttons */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding to buttons */
+  margin: 5px; /* Add margin around buttons */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-section button:hover {
+  background-color: #023e8a; /* Darker background color on hover */
 }
